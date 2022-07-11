@@ -1,7 +1,14 @@
+/*  Class Visitor has several overloaded methods of the same name,
+    each of which will be called inside the accept method of each sub-object
+    of the composite object
+*/
 public interface HouseLevelVisitor {
     void visit(FirstLevel firstLevel);
+
     void visit(SecondLevel secondLevel);
+
     void visit(ThirdLevel thirdLevel);
+
     void visit(House house);
 }
 
